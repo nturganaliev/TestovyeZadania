@@ -1,0 +1,15 @@
+let's assume that our table is called: students_details
+
+1) to get the top 3 polyglot students and the number of languages that they know
+   we do the following:
+
+	SELECT name, COUNT(name)
+	FROM students_details
+	GROUP BY name
+	LIMIT 3;
+
+2) and to get the number of unique languages in our table,
+   we use the following query:
+
+   	SELECT DISTINCT language
+   	FROM students_languages;
